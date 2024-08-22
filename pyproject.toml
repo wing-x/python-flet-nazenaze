@@ -1,0 +1,20 @@
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = 'black'
+line_length = 120
+
+[tool.flake8]
+max-line-length = 120
+#extend-ignore = ["E203", "W503","W504"]
+#exclude = [".venv", ".git", "__pycache__",]
+#max-complexity = 10
+
+[tool.mypy]
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+pythonpath = ["src",]
+testpaths = ["tests",]
