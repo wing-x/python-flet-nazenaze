@@ -5,7 +5,7 @@
     <option name="enabledOnSave" value="true" />
     <option name="sdkName" value="Python 3.12 (Python_Flet_NazeNaze)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (Python_Flet_NazeNaze)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (python-flet-nazenaze)" project-jdk-type="Python SDK" />
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
   </component>
