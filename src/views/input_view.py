@@ -1,8 +1,10 @@
 # TODO なぜなぜ分を実行する前に、問題点が抽象的になってないかなどのチェック機能を入れる
+import json
 import os
 
-import flet as ft
 import Dummy_API
+import flet as ft
+from nazenaze_analysis_api import perform_naze_naze_analysis
 from result_view import create_result_view
 from setting_view import create_settings_view
 
@@ -90,9 +92,15 @@ def create_input_view(page: ft.Page):
             page.views.append(result_view)
             page.go("/result")
         else:
-            # TODO 最終的にはAPIを呼出して結果を表示するが、一旦開発中ダイアログを出す
-            show_alert_dialog("警告", "APIの呼出しは開発中です")
-            return
+            # 選択したモデル、問題文にて出力を行う
+            # TODO 出力結果の文章量によっては入りきらない場合があるので、リザルト画面について調整を行う
+            model = selected_model
+            user_problem = problem_text
+            analysis_result = perform_naze_naze_analysis(user_problem, model)
+            analysis_resul_json = json.loads(analysis_result[0].text)
+            result_view = create_result_view(page, analysis_resul_json)
+            page.views.append(result_view)
+            page.go("/result")
 
     run_button = ft.ElevatedButton(
         "なぜなぜ分析を実行",

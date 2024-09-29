@@ -1,6 +1,7 @@
 import flet as ft
 
 
+# TODO 出力結果について、もう少し見やすくなるように動的な可変処理を導入する
 class WhyWhyNode(ft.Column):
     def __init__(self, name, level, on_edit):
         super().__init__()
@@ -25,8 +26,8 @@ class WhyWhyNode(ft.Column):
             bgcolor=get_group_color(self.level),
             border_radius=5,
             padding=10,
-            width=170,
-            height=100,
+            width=210,
+            height=160,
             on_click=lambda _: self.on_edit(self),
         )
 
