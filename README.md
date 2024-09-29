@@ -34,7 +34,7 @@ Pythonとfletを使用して開発されたなぜなぜ分析アプリケーシ�
 
 - Python 3.9+
 - flet: GUIフレームワーク
-- Anthropic API: Claude AIモデルの利用（開発中）
+- Anthropic API: Claude AIモデルの利用s
 
 
 ## セットアップ
@@ -70,7 +70,7 @@ Pythonとfletを使用して開発されたなぜなぜ分析アプリケーシ�
 
 - [x] 基本的なGUI実装
 - [x] ダミーデータでの動作確認
-- [ ] Anthropic API統合
+- [x] Anthropic API統合
 - [ ] 追加情報入力機能
 - [ ] 最大深度と最大分岐数の設定機能
 - [ ] 過去の分析結果の参照
