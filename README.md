@@ -38,7 +38,7 @@ Pythonとfletを使用して開発されたなぜなぜ分析アプリケーシ�
 
 
 ## セットアップ
-※ Anthropic APIを使用する場合は事前に環境変数への登録となります。
+※ Anthropic APIを使用する場合は事前に環境変数への登録が必要となります。
   https://docs.anthropic.com/en/docs/initial-setup#set-your-api-key
 
 
